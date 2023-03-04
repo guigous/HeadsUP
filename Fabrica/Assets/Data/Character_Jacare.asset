@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Character_Jacare
   m_EditorClassIdentifier: 
   charName: "Jacar\xE9"
-  face: {fileID: 21300000, guid: f06a5ca264bbdbc498ee1904143cc031, type: 3}
+  face: {fileID: -803221430, guid: 529543897b719cd4a96f624495482d68, type: 3}

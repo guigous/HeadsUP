@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Character_Dog
   m_EditorClassIdentifier: 
   charName: Cachorro
-  face: {fileID: 21300000, guid: e200a633a434d2046a1b3f6706ccf9d0, type: 3}
+  face: {fileID: 1976167469, guid: 529543897b719cd4a96f624495482d68, type: 3}

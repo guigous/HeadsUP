@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2402778029617858186}
   - component: {fileID: 5179574921560601113}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: NameText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 8853732349643986974}
   - component: {fileID: 8214620837863950600}
   m_Layer: 5
-  m_Name: PersonagemPanem
+  m_Name: CharacterPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -418,7 +418,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transparentPanel: {fileID: 3859873398944063049}
-  showTransparentPanel: 0
+  showTransparentPanel: 1
+  charImage: {fileID: 8214620837863950600}
+  nameText: {fileID: 5179574921560601113}
 --- !u!1 &7213080846274649755
 GameObject:
   m_ObjectHideFlags: 0
