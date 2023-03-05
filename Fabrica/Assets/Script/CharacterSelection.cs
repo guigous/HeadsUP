@@ -12,22 +12,22 @@ public class CharacterSelection : MonoBehaviour
 
     void Start()
     {
-        CharacterList.instance.SelectCharIndex = 0;
+        CharacterList.Instance.SelectCharIndex = 0;
         UpdateCharacterPanels();
     }
 
      void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.A))
         {
-            CharacterList.instance.SelectCharIndex--;
+            CharacterList.Instance.SelectCharIndex--;
             Debug.Log("left");
             UpdateCharacterPanels();
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.D))
         {
-            CharacterList.instance.SelectCharIndex++;
+            CharacterList.Instance.SelectCharIndex++;
             Debug.Log("right");
             UpdateCharacterPanels();
         }
@@ -36,11 +36,11 @@ public class CharacterSelection : MonoBehaviour
 
     private void UpdateCharacterPanels()
     {
-        characterPanelLeft.UpdateCharacterPanel(CharacterList.instance.GetPrevious());
+        characterPanelLeft.UpdateCharacterPanel(CharacterList.Instance.GetPrevious());
 
-        characterPanelMiddle.UpdateCharacterPanel(CharacterList.instance.currentCharacter);
+        characterPanelMiddle.UpdateCharacterPanel(CharacterList.Instance.currentCharacter);
 
-        characterPanelRight.UpdateCharacterPanel(CharacterList.instance.GetNext());
+        characterPanelRight.UpdateCharacterPanel(CharacterList.Instance.GetNext());
     }
 
 }

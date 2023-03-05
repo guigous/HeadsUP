@@ -438,6 +438,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &883956373 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 1350413363137129784, guid: 2f3b0a95b2e10d34298457da38c02c6f, type: 3}
+  m_PrefabInstance: {fileID: 1301272970}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &990148986
 GameObject:
   m_ObjectHideFlags: 0
@@ -778,6 +783,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1396134198, guid: 2f3b0a95b2e10d34298457da38c02c6f, type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 883956373}
     - target: {fileID: 1350413363137129786, guid: 2f3b0a95b2e10d34298457da38c02c6f, type: 3}
       propertyPath: m_Name
       value: penguin_idle_01 (2)
@@ -826,5 +835,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1350413363137129789, guid: 2f3b0a95b2e10d34298457da38c02c6f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 901639f1dddd7b04aa3c943786d274d5, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f3b0a95b2e10d34298457da38c02c6f, type: 3}

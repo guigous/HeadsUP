@@ -51,7 +51,8 @@ public class Move : MonoBehaviour
         }
         if (Input.GetButtonDown("Jump") && taNoChao == false && pulosExtras > 0)
         {
-            rb.velocity = Vector2.up * 25;
+            rb.velocity = Vector2.up * 27;
+            anim.SetBool("taPulando", true);
             pulosExtras--; 
         }
 

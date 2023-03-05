@@ -1,10 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class CharacterList : MonoBehaviour
 {
-    public static CharacterList instance = null;
+    public static CharacterList Instance = null;
 
     [SerializeField] List<CharacterStats> characters = new List<CharacterStats>();
 
@@ -25,9 +26,10 @@ public class CharacterList : MonoBehaviour
 
     internal CharacterStats currentCharacter;
 
+
     void Awake()
     {
-        instance = this;
+        Instance = this;
     }
 
     public CharacterStats GetPrevious()
