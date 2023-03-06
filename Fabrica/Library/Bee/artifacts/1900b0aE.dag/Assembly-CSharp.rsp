@@ -384,15 +384,12 @@
 "Assets/Cenario/JMO Assets/Cartoon FX (legacy)/Scripts/CFX_LightFlicker.cs"
 "Assets/Cenario/JMO Assets/Cartoon FX (legacy)/Scripts/CFX_LightIntensityFade.cs"
 "Assets/Script/automove.cs"
-"Assets/Script/Background.cs"
-"Assets/Script/CharacterList.cs"
-"Assets/Script/CharacterSelection.cs"
-"Assets/Script/CharacterStats.cs"
+"Assets/Script/Cena.cs"
 "Assets/Script/Dano.cs"
 "Assets/Script/Move.cs"
-"Assets/Script/PersonagemPanel.cs"
-"Assets/Script/PersonagemStais.cs"
+"Assets/Script/PersonagemSlot.cs"
 "Assets/Script/push.cs"
+"Assets/Script/SpawnPlayer.cs"
 -langversion:9.0
 
 /deterministic
