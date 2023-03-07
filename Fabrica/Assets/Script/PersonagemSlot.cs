@@ -39,7 +39,7 @@ public class PersonagemSlot : MonoBehaviour
                 avatarImagem.sprite = avatares[avatarIndice];
                 escolhido[avatarIndice] = true;
 
-                PlayerPrefs.SetInt (string.Format("Personagem{0}", avatarIndice), avatarIndice);
+                PlayerPrefs.SetInt (string.Format("Personagem{0}", indiceSlot), avatarIndice);
             }
 
             if(primeiraEscolha)

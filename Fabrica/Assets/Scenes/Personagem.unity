@@ -394,7 +394,7 @@ MonoBehaviour:
   - {fileID: -1347513877, guid: d8b49608b1c9f7d418f5814867cd064d, type: 3}
   avatarImagem: {fileID: 1092569728}
   avatarIndice: -1
-  indiceSlot: 0
+  indiceSlot: 1
 --- !u!1 &125257850
 GameObject:
   m_ObjectHideFlags: 0
@@ -1029,7 +1029,7 @@ RectTransform:
   m_GameObject: {fileID: 1092569726}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 108792467}
@@ -1037,7 +1037,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -320.02, y: -22.917}
+  m_AnchoredPosition: {x: -320.02, y: -34}
   m_SizeDelta: {x: 320, y: 320}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1092569728
@@ -1240,7 +1240,7 @@ RectTransform:
   m_GameObject: {fileID: 1347960195}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1622462205}
@@ -1483,7 +1483,7 @@ MonoBehaviour:
   - {fileID: -1347513877, guid: d8b49608b1c9f7d418f5814867cd064d, type: 3}
   avatarImagem: {fileID: 1347960197}
   avatarIndice: 0
-  indiceSlot: 0
+  indiceSlot: 2
 --- !u!1 &1693639808
 GameObject:
   m_ObjectHideFlags: 0
