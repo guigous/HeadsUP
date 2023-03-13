@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -64,7 +65,7 @@ public class Move : MonoBehaviour
 
         
 
-
+        
 
         direction = Input.GetAxis("Horizontal");
         if(direction > 0)
