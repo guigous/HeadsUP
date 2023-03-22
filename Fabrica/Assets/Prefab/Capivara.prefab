@@ -237,7 +237,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1350413363137129786}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 7079f3ea0b91e89479b6c04a30842c79, type: 2}
   m_CullingMode: 0
@@ -309,14 +309,13 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5732438715818508444}
-        m_TargetAssemblyTypeName: UnityEngine.InputSystem.PlayerInput, Unity.InputSystem
-        m_MethodName: set_actions
-        m_Mode: 2
+      - m_Target: {fileID: 3902452933010012526}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: SetMoviment
+        m_Mode: 0
         m_Arguments:
-          m_ObjectArgument: {fileID: -944628639613478452, guid: 21f09a901d578af4babd523aab7b39b9, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.InputSystem.InputActionAsset,
-            Unity.InputSystem
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
