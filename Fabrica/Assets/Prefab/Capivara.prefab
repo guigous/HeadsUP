@@ -41,9 +41,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1350413363137129788}
   - component: {fileID: 1350413363137129789}
-  - component: {fileID: 1350413363137129790}
   - component: {fileID: 1350413363137129791}
   - component: {fileID: 1350413363137129784}
+  - component: {fileID: 8754983932253668971}
+  - component: {fileID: 8830461526813819957}
+  - component: {fileID: 2004746649669696679}
   m_Layer: 0
   m_Name: Capivara
   m_TagString: Player
@@ -119,114 +121,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &1350413363137129790
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1350413363137129786}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.6, y: 0.76}
-    oldSize: {x: 8.15, y: 8.150872}
-    newSize: {x: 5.12, y: 5.12}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.19727409, y: -5.8823385}
-      - {x: -0.17956182, y: -5.8652096}
-      - {x: -0.16243291, y: -5.556889}
-      - {x: 0.008856137, y: -5.0944085}
-      - {x: 0.11162957, y: -5.0772796}
-      - {x: 0.57411003, y: -5.0087643}
-      - {x: 0.8310436, y: -4.9231195}
-      - {x: 1.3449107, y: -4.7689595}
-      - {x: 1.67036, y: -4.666186}
-      - {x: 1.9615513, y: -4.5462837}
-      - {x: 2.030067, y: -4.3921237}
-      - {x: 1.8759068, y: -3.6898384}
-      - {x: 1.841649, y: -3.4671626}
-      - {x: 1.6361021, y: -2.696362}
-      - {x: 1.6018443, y: -2.5935886}
-      - {x: 1.4990709, y: -2.1996236}
-      - {x: 1.293524, y: -1.6343699}
-      - {x: 1.1736217, y: -1.3089206}
-      - {x: 1.6189733, y: -1.0862448}
-      - {x: 1.8073912, y: -0.9663425}
-      - {x: 1.9101646, y: -0.82931125}
-      - {x: 2.1328404, y: -0.19554175}
-      - {x: 2.184227, y: 0.010005104}
-      - {x: 2.2527428, y: 0.3183254}
-      - {x: 2.2527428, y: 0.81506366}
-      - {x: 2.1157115, y: 0.9863527}
-      - {x: 1.9958092, y: 1.0206106}
-      - {x: 1.7217467, y: 1.106255}
-      - {x: 1.5333287, y: 1.123384}
-      - {x: 1.2763951, y: 1.1576418}
-      - {x: 0.96807486, y: 1.1747707}
-      - {x: 0.008856137, y: 1.294673}
-      - {x: -0.23094854, y: 1.3460597}
-      - {x: -0.4536243, y: 1.3803176}
-      - {x: -0.72768676, y: 1.3974464}
-      - {x: -1.1730384, y: 1.3974464}
-      - {x: -1.3443273, y: 1.3460597}
-      - {x: -1.5841321, y: 1.2261574}
-      - {x: -1.7896789, y: 1.0377394}
-      - {x: -1.8410656, y: 0.93496597}
-      - {x: -2.5776086, y: 0.93496597}
-      - {x: -2.663253, y: 0.7979348}
-      - {x: -2.663253, y: 0.45535663}
-      - {x: -2.6289952, y: 0.3183254}
-      - {x: -2.3720617, y: 0.11277854}
-      - {x: -2.509093, y: -0.21267067}
-      - {x: -2.71464, y: -0.6751511}
-      - {x: -2.8002844, y: -0.89782685}
-      - {x: -2.8859289, y: -1.1547605}
-      - {x: -2.9715734, y: -1.4459518}
-      - {x: -3.2456357, y: -2.4222994}
-      - {x: -3.3655381, y: -2.867651}
-      - {x: -3.5539563, y: -3.6555805}
-      - {x: -3.6396008, y: -4.083803}
-      - {x: -3.6909873, y: -4.3921237}
-      - {x: -3.6909873, y: -4.5976706}
-      - {x: -3.6396008, y: -4.683315}
-      - {x: -3.3655381, y: -4.8032174}
-      - {x: -2.9544444, y: -4.9402485}
-      - {x: -2.5776086, y: -4.9916353}
-      - {x: -2.149386, y: -5.0601506}
-      - {x: -1.9438391, y: -5.0772796}
-      - {x: -1.9438391, y: -5.522631}
-      - {x: -1.9267101, y: -6.0364985}
-      - {x: -1.9438391, y: -6.122143}
-      - {x: -1.8239367, y: -6.1906586}
-      - {x: -1.412843, y: -6.1906586}
-      - {x: -1.1730384, y: -6.105014}
-      - {x: -1.1559094, y: -5.950854}
-      - {x: -1.2758118, y: -5.8652096}
-      - {x: -1.6355188, y: -5.8652096}
-      - {x: -1.6355188, y: -5.6596627}
-      - {x: -1.6526477, y: -5.1286664}
-      - {x: -1.0188782, y: -5.1115375}
-      - {x: -1.0188782, y: -5.1457953}
-      - {x: -0.89897585, y: -5.1286664}
-      - {x: -0.4364954, y: -5.1457953}
-      - {x: -0.4364954, y: -6.0878854}
-      - {x: -0.35085088, y: -6.1906586}
-      - {x: 0.214403, y: -6.1906586}
-      - {x: 0.28291863, y: -6.122143}
-      - {x: 0.28291863, y: -6.0193696}
-      - {x: 0.24866082, y: -5.933725}
 --- !u!95 &1350413363137129791
 Animator:
   serializedVersion: 5
@@ -268,3 +162,111 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!61 &8754983932253668971
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350413363137129786}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.7667823, y: -2.3924685}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.6, y: 0.76}
+    oldSize: {x: 8.15, y: 8.150872}
+    newSize: {x: 5.12, y: 5.12}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.9962177, y: 7.604391}
+  m_EdgeRadius: 0
+--- !u!114 &8830461526813819957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350413363137129786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60b558d5684cc644a86929cc97e334a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 0
+  jumpHeight: 0
+  anim: {fileID: 0}
+  floor: 0
+--- !u!114 &2004746649669696679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350413363137129786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 21f09a901d578af4babd523aab7b39b9, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8830461526813819957}
+        m_TargetAssemblyTypeName: NewMove, Assembly-CSharp
+        m_MethodName: SetMoviment
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 642f64d2-6238-4b73-b18c-872bbe5a5ba6
+    m_ActionName: Player 1/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d,/XInputControllerWindows/dpad/up,/XInputControllerWindows/dpad/down,/XInputControllerWindows/dpad/left,/XInputControllerWindows/dpad/right]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8830461526813819957}
+        m_TargetAssemblyTypeName: NewMove, Assembly-CSharp
+        m_MethodName: SetJump
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 4091b2ba-55e7-415d-9ea0-f6a724c60de8
+    m_ActionName: Player 1/Jump[/Keyboard/space,/XInputControllerWindows/buttonSouth]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 5016c004-d6aa-4ba6-a850-6a9af207778d
+    m_ActionName: Player 2/Movement[/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow,/XInputControllerWindows/dpad/up,/XInputControllerWindows/dpad/down,/XInputControllerWindows/dpad/left,/XInputControllerWindows/dpad/right]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player 1
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}

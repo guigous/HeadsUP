@@ -9,9 +9,16 @@ public class NewMove : MonoBehaviour
     private Vector2 movimento;
     public float moveSpeed;
     public float jumpHeight;
+    public Animator anim;
+    public bool floor;
+    private Vector2 facingRight;
+    private Vector2 facingLeft;
+
+
     // Start is called before the first frame update
     void Start()
     {
+        anim=GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
     }
 

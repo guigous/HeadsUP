@@ -451,6 +451,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &253814974 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1350413363137129791, guid: 2f3b0a95b2e10d34298457da38c02c6f, type: 3}
+  m_PrefabInstance: {fileID: 1786616388}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &263607185
 GameObject:
   m_ObjectHideFlags: 0
@@ -1660,6 +1665,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 5016c004-d6aa-4ba6-a850-6a9af207778d
     m_ActionName: Player 2/Movement[/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 4091b2ba-55e7-415d-9ea0-f6a724c60de8
+    m_ActionName: Player 1/Jump[/Keyboard/space,/XInputControllerWindows/buttonSouth]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player 2
@@ -1896,6 +1905,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   jumpHeight: 50
+  anim: {fileID: 0}
+  floor: 0
 --- !u!1 &1615622270
 GameObject:
   m_ObjectHideFlags: 0
@@ -4285,5 +4296,13 @@ PrefabInstance:
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[211].y
       value: -8.859375
       objectReference: {fileID: 0}
+    - target: {fileID: 1350413363137129791, guid: 2f3b0a95b2e10d34298457da38c02c6f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8830461526813819957, guid: 2f3b0a95b2e10d34298457da38c02c6f, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 253814974}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f3b0a95b2e10d34298457da38c02c6f, type: 3}
