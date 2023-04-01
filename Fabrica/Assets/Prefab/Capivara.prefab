@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1096867647}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.93, y: -6.21, z: 0}
+  m_LocalPosition: {x: -0.93, y: -6.55, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44,8 +44,7 @@ GameObject:
   - component: {fileID: 1350413363137129791}
   - component: {fileID: 1350413363137129784}
   - component: {fileID: 8754983932253668971}
-  - component: {fileID: 8830461526813819957}
-  - component: {fileID: 2004746649669696679}
+  - component: {fileID: 3456293863197246386}
   m_Layer: 0
   m_Name: Capivara
   m_TagString: Player
@@ -161,7 +160,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!61 &8754983932253668971
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -188,7 +187,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.9962177, y: 7.604391}
   m_EdgeRadius: 0
---- !u!114 &8830461526813819957
+--- !u!114 &3456293863197246386
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -197,76 +196,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1350413363137129786}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60b558d5684cc644a86929cc97e334a2, type: 3}
+  m_Script: {fileID: 11500000, guid: 9ae2f44e946c11746aee489b8f4bca91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
-  jumpHeight: 0
-  anim: {fileID: 0}
-  floor: 0
---- !u!114 &2004746649669696679
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1350413363137129786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 21f09a901d578af4babd523aab7b39b9, type: 3}
-  m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8830461526813819957}
-        m_TargetAssemblyTypeName: NewMove, Assembly-CSharp
-        m_MethodName: SetMoviment
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 642f64d2-6238-4b73-b18c-872bbe5a5ba6
-    m_ActionName: Player 1/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d,/XInputControllerWindows/dpad/up,/XInputControllerWindows/dpad/down,/XInputControllerWindows/dpad/left,/XInputControllerWindows/dpad/right]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8830461526813819957}
-        m_TargetAssemblyTypeName: NewMove, Assembly-CSharp
-        m_MethodName: SetJump
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 4091b2ba-55e7-415d-9ea0-f6a724c60de8
-    m_ActionName: Player 1/Jump[/Keyboard/space,/XInputControllerWindows/buttonSouth]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 5016c004-d6aa-4ba6-a850-6a9af207778d
-    m_ActionName: Player 2/Movement[/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow,/XInputControllerWindows/dpad/up,/XInputControllerWindows/dpad/down,/XInputControllerWindows/dpad/left,/XInputControllerWindows/dpad/right]
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: Player 1
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
+  rb: {fileID: 1350413363137129784}
+  moveSpeed: 20
+  anim: {fileID: 1350413363137129791}
+  taNoChao: 0
+  detectaChao: {fileID: 1096867648}
+  oQueEChao:
+    serializedVersion: 2
+    m_Bits: 256
+  pulosExtras: 1
