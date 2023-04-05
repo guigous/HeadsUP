@@ -21,7 +21,7 @@ public class NewMove : MonoBehaviour
 
     private Vector2 facingRight;
     private Vector2 facingLeft;
-
+    private BoxCollider2D collider2D; 
 
 
     // Start is called before the first frame update
@@ -30,6 +30,7 @@ public class NewMove : MonoBehaviour
         anim=GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        collider2D = GetComponent<BoxCollider2D>();
     }
 
     public void SetMoviment(InputAction.CallbackContext value)
@@ -58,38 +59,17 @@ public class NewMove : MonoBehaviour
         {
             
         }
-        /*private void Flip()
-    {
-        facingRight = !facingRight;
-        scale.x *= -1;
-        transform.localScale = scale;
-    }
-        */
-        floor = Physics2D.OverlapCircle(floorDetect.position, 0.2f, floorMask);
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 1f, floorMask);
-        Debug.DrawRay(transform.position, Vector2.down * 10f, Color.red);
 
-        if  (hit.collider != null)
+        if (IsGrounded() != null)
         {
-            
 
-            anim.SetBool("taPulando", true);
-         
-            
+
+         anim.SetBool("taPulando", true);
+
+
 
         }
-        if (rb.velocity.y > 0f && floor == false && pulosExtras > 0)
-        {
-            
-            anim.SetBool("taPulando", true);
-            pulosExtras--;
-        }
-
-        if (floor && rb.velocity.y == 0)
-        {
-            pulosExtras = 1;
-            anim.SetBool("taPulando", false);
-        }
+       
 
 
 
@@ -99,6 +79,22 @@ public class NewMove : MonoBehaviour
 
     }
 
-   
+   private bool IsGrounded()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(collider2D.bounds.center, Vector2.down, collider2D.bounds.extents.y + 0.1f, floorMask);
+        Color rayColor;
+        if(hit.collider != null)
+        {
+            rayColor = Color.green;
+        }
+        else
+        {
+            rayColor = Color.red;
+        }
+        Debug.DrawRay(collider2D.bounds.center, Vector2.down * (collider2D.bounds.extents.y + 0.1f), rayColor);
+        Debug.Log(hit.collider);
+
+        return hit.collider != null;
+    }
 
 }
