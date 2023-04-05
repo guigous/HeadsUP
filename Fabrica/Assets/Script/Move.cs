@@ -47,6 +47,7 @@ public class Move : MonoBehaviour
         
         taNoChao = Physics2D.OverlapCircle(detectaChao.position, 0.2f, oQueEChao);
 
+
         if (Input.GetButtonDown("Jump") && taNoChao == true)
         {
             rb.velocity = Vector2.up * 25;
