@@ -2310,14 +2310,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1341371285, guid: 2f3b0a95b2e10d34298457da38c02c6f, type: 3}
-      propertyPath: jumpHeight
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 1341371285, guid: 2f3b0a95b2e10d34298457da38c02c6f, type: 3}
-      propertyPath: floorDetect
-      value: 
-      objectReference: {fileID: 233210315}
     - target: {fileID: 1350413363137129786, guid: 2f3b0a95b2e10d34298457da38c02c6f, type: 3}
       propertyPath: m_Name
       value: Capivara
@@ -2328,11 +2320,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1350413363137129788, guid: 2f3b0a95b2e10d34298457da38c02c6f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -29.169817
+      value: -31.49
       objectReference: {fileID: 0}
     - target: {fileID: 1350413363137129788, guid: 2f3b0a95b2e10d34298457da38c02c6f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -33.1
+      value: -34.31
       objectReference: {fileID: 0}
     - target: {fileID: 1350413363137129788, guid: 2f3b0a95b2e10d34298457da38c02c6f, type: 3}
       propertyPath: m_LocalPosition.z

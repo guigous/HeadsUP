@@ -11,16 +11,16 @@ public class NewMove : MonoBehaviour
     public float jumpHeight;
     public int pulosExtras = 1;
     private float direction;
+    
 
     public Animator anim;
     private SpriteRenderer spriteRenderer;
+    private BoxCollider2D boxCollider2D;
 
     public bool floor;
-    public Transform floorDetect;
     public LayerMask floorMask;
 
-    private Vector2 facingRight;
-    private Vector2 facingLeft;
+    
 
 
 
@@ -29,14 +29,13 @@ public class NewMove : MonoBehaviour
     {
         anim=GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        boxCollider2D = GetComponent<BoxCollider2D>();
     }
 
     public void SetMoviment(InputAction.CallbackContext value)
     {
         movimento = value.ReadValue<Vector2>();
-        Debug.Log(movimento);
-
+        
     }
     public void SetJump(InputAction.CallbackContext value)
     {
@@ -45,60 +44,62 @@ public class NewMove : MonoBehaviour
 
     private void FixedUpdate()
     {
-        transform.Translate(movimento.x, 0, 0);
-        if (movimento.x > 0f)
-        {
-            anim.SetBool("taCorrendo", true);
-        }
-        if (movimento.x == 0f)
-        {
-            anim.SetBool("taCorrendo", false);
-        }
-        if (movimento.x < 0f)
-        {
-            
-        }
-        /*private void Flip()
-    {
-        facingRight = !facingRight;
-        scale.x *= -1;
-        transform.localScale = scale;
-    }
-        */
-        floor = Physics2D.OverlapCircle(floorDetect.position, 0.2f, floorMask);
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 1f, floorMask);
-        Debug.DrawRay(transform.position, Vector2.down * 10f, Color.red);
 
-        if  (hit.collider != null)
-        {
-            
-
-            anim.SetBool("taPulando", true);
-         
-            
-
-        }
-        if (rb.velocity.y > 0f && floor == false && pulosExtras > 0)
-        {
-            
-            anim.SetBool("taPulando", true);
-            pulosExtras--;
-        }
-
-        if (floor && rb.velocity.y == 0)
-        {
-            pulosExtras = 1;
-            anim.SetBool("taPulando", false);
-        }
-
-
-
-
+        Walking();
 
         
 
-    }
 
-   
+
+
+
+
+
+    }
+    private void Walking()
+    {
+        transform.Translate(movimento.x, 0f, 0f);
+        
+        if (rb.angularVelocity != 0)
+        {
+            anim.SetBool("taCorrendo", true);
+        }
+        else
+        {
+            anim.SetBool("taCorrendo", false);
+        }
+        if(movimento.x < 0f)
+        {
+            transform.localScale = new Vector3(-1,1,1);
+        }
+        if (movimento.x > 0f)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
+
+        Debug.Log(movimento);
+
+    }
+    private bool IsGrounded()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(boxCollider2D.bounds.center, Vector2.down, boxCollider2D.bounds.extents.y + 0.1f, floorMask);
+        Color rayColor;
+        
+
+        if (hit.collider != null)
+        {
+            rayColor = Color.green;
+            
+            
+        }
+        else
+        {
+            rayColor = Color.red;
+            
+        }
+        Debug.Log(hit.collider);
+        Debug.DrawRay(boxCollider2D.bounds.center, Vector2.down * (boxCollider2D.bounds.extents.y + 0.2f), rayColor);
+        return hit.collider != null;
+    }
 
 }
