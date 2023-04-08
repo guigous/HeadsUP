@@ -47,8 +47,15 @@ public class NewMove : MonoBehaviour
 
         Walking();
 
-        
+        if (IsGrounded() == true )
+        {
+            Debug.Log(IsGrounded());
 
+        }
+        if (IsGrounded() == false)
+        {
+            Debug.Log(IsGrounded());
+        }
 
 
 
@@ -77,7 +84,7 @@ public class NewMove : MonoBehaviour
             transform.localScale = new Vector3(1, 1, 1);
         }
 
-        Debug.Log(movimento);
+        //Debug.Log(movimento);
 
     }
     private bool IsGrounded()
@@ -97,9 +104,15 @@ public class NewMove : MonoBehaviour
             rayColor = Color.red;
             
         }
-        Debug.Log(hit.collider);
+        //Debug.Log(hit.collider);
         Debug.DrawRay(boxCollider2D.bounds.center, Vector2.down * (boxCollider2D.bounds.extents.y + 0.2f), rayColor);
         return hit.collider != null;
     }
-
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+         if (collision.collider != null && CompareTag("floor"))
+        {
+            Debug.Log("here");
+        }
+    }
 }
