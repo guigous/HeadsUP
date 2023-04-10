@@ -30,6 +30,7 @@ public class NewMove : MonoBehaviour
         anim=GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         boxCollider2D = GetComponent<BoxCollider2D>();
+        
     }
 
     public void SetMoviment(InputAction.CallbackContext value)
@@ -39,24 +40,24 @@ public class NewMove : MonoBehaviour
     }
     public void SetJump(InputAction.CallbackContext value)
     {
-        rb.velocity = Vector2.up * jumpHeight;
+        if (IsGrounded() == true)
+        {
+            rb.velocity = Vector2.up * jumpHeight;
+            anim.SetBool("taPulando", true); 
+        }
+       else
+        {
+            anim.SetBool("taPulando", false);
+        }
     }
 
     private void FixedUpdate()
     {
+        
 
         Walking();
 
-        if (IsGrounded() == true )
-        {
-            Debug.Log(IsGrounded());
-
-        }
-        if (IsGrounded() == false)
-        {
-            Debug.Log(IsGrounded());
-        }
-
+         
 
 
 
@@ -84,35 +85,29 @@ public class NewMove : MonoBehaviour
             transform.localScale = new Vector3(1, 1, 1);
         }
 
-        //Debug.Log(movimento);
-
-    }
-    private bool IsGrounded()
-    {
-        RaycastHit2D hit = Physics2D.Raycast(boxCollider2D.bounds.center, Vector2.down, boxCollider2D.bounds.extents.y + 0.1f, floorMask);
-        Color rayColor;
         
 
+    }
+
+    
+    
+
+    private bool IsGrounded()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(boxCollider2D.bounds.center, Vector2.down, boxCollider2D.bounds.extents.y + 0.5f, floorMask);
+        Debug.Log(hit.collider);
+
         if (hit.collider != null)
-        {
-            rayColor = Color.green;
-            
-            
-        }
+            return true;
         else
-        {
-            rayColor = Color.red;
-            
-        }
-        //Debug.Log(hit.collider);
-        Debug.DrawRay(boxCollider2D.bounds.center, Vector2.down * (boxCollider2D.bounds.extents.y + 0.2f), rayColor);
-        return hit.collider != null;
+            return false;
+        
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
          if (collision.collider != null && CompareTag("floor"))
         {
-            Debug.Log("here");
+         
         }
     }
 }
