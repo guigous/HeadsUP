@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Dano : MonoBehaviour
 {
-    public int damage = 1;
+    public int Score;
     public GameObject fx;
+    public HUDManager hudManager;
 
-    
 
     private void Start()
     {
@@ -22,9 +22,13 @@ public class Dano : MonoBehaviour
             
             Instantiate(fx, transform.position, Quaternion.identity);
 
-             Destroy(gameObject);
+            Destroy(gameObject);
+            AddScore();
         }
 
     }
-
+    public void AddScore()
+    {
+        Score = Score ++;
+    }
 }
