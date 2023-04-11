@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1350413363137129788}
   - component: {fileID: 1350413363137129789}
-  - component: {fileID: 1350413363137129791}
   - component: {fileID: 1350413363137129784}
   - component: {fileID: 1341371285}
   - component: {fileID: 1341371286}
@@ -90,26 +89,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &1350413363137129791
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1350413363137129786}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7079f3ea0b91e89479b6c04a30842c79, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
 --- !u!50 &1350413363137129784
 Rigidbody2D:
   serializedVersion: 4
@@ -130,7 +109,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &1341371285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,9 +123,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
-  jumpHeight: 30
+  jumpHeight: 49.68
   pulosExtras: 1
-  anim: {fileID: 1350413363137129791}
+  anim: {fileID: 0}
   floor: 0
   floorMask:
     serializedVersion: 2
@@ -318,5 +297,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c34313358a2045488b846ab354d1377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  Score: 0
   fx: {fileID: 0}
+  hudManager: {fileID: 0}
