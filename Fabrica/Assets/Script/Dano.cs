@@ -4,31 +4,27 @@ using UnityEngine;
 
 public class Dano : MonoBehaviour
 {
-    public int Score;
-    public GameObject fx;
-    public HUDManager hudManager;
+    public Rounds roundManager;
+    public Transform respawnPoint;
 
 
     private void Start()
     {
-        
+        roundManager = FindAnyObjectByType<Rounds>();
+
     }
+
 
     private void OnTriggerEnter2D(Collider2D other)
     {
 
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("head"))
         {
-            
-            Instantiate(fx, transform.position, Quaternion.identity);
 
-            Destroy(gameObject);
-            AddScore();
+            roundManager.Player1GanhouRound();
+
+
         }
 
     }
-    public void AddScore()
-    {
-        Score = Score ++;
-    }
-}
+}  
