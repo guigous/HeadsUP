@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: jump.capivara
+  m_Name: Jump.Cachorro
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,13 +20,13 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 1947971075, guid: c8c226ac43c20884eb9c050c8d17fadb, type: 3}
+      value: {fileID: -1580487707, guid: 88d103ebdc780ba4da3da1ca66e7986e, type: 3}
     - time: 0.5
-      value: {fileID: -111564496, guid: caabcfbcf499a2f4fab13d21d84f3a5c, type: 3}
+      value: {fileID: 821657608, guid: f4b788c105cf12f4594805eb2d16d76c, type: 3}
     - time: 1
-      value: {fileID: 1907495342, guid: 8e6079c5a3100734aa660e564728da7a, type: 3}
+      value: {fileID: 834089644, guid: 42df2db7570614a4f87aec5ae9c56186, type: 3}
     - time: 1.5
-      value: {fileID: 1907495342, guid: 8e6079c5a3100734aa660e564728da7a, type: 3}
+      value: {fileID: 834089644, guid: 42df2db7570614a4f87aec5ae9c56186, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -46,10 +46,10 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 1947971075, guid: c8c226ac43c20884eb9c050c8d17fadb, type: 3}
-    - {fileID: -111564496, guid: caabcfbcf499a2f4fab13d21d84f3a5c, type: 3}
-    - {fileID: 1907495342, guid: 8e6079c5a3100734aa660e564728da7a, type: 3}
-    - {fileID: 1907495342, guid: 8e6079c5a3100734aa660e564728da7a, type: 3}
+    - {fileID: -1580487707, guid: 88d103ebdc780ba4da3da1ca66e7986e, type: 3}
+    - {fileID: 821657608, guid: f4b788c105cf12f4594805eb2d16d76c, type: 3}
+    - {fileID: 834089644, guid: 42df2db7570614a4f87aec5ae9c56186, type: 3}
+    - {fileID: 834089644, guid: 42df2db7570614a4f87aec5ae9c56186, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
