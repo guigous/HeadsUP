@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class AudioGameplay : MonoBehaviour
 {
-    AudioSource m_MyAudioSource;
+    AudioSource MyAudioSource;
+
+    AudioClip jumpClip;
+    AudioClip winClip;
+    AudioClip runClip;
 
     void Start()
     {
-        m_MyAudioSource = GetComponent<AudioSource>();
-        m_MyAudioSource.Play();
+        MyAudioSource = GetComponent<AudioSource>();
+        MyAudioSource.Play();
     }
 
     void Update()

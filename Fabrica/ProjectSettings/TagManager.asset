@@ -6,6 +6,7 @@ TagManager:
   tags:
   - floor
   - head
+  - MenuMusic
   layers:
   - Default
   - TransparentFX
