@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7280879321780655100}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.52, y: 0.64, z: 0}
+  m_LocalPosition: {x: -0.08, y: 7.47, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -42,10 +42,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.46771336, y: 0.36377674}
+  m_Offset: {x: 0.7730571, y: 0.03067422}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -56,7 +56,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.0141525, y: 1.1039361}
+  m_Size: {x: 5.846217, y: 1.7701411}
   m_EdgeRadius: 0
 --- !u!1 &7738834406613382242
 GameObject:
@@ -83,7 +83,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7738834406613382242}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -6.04, z: 0}
+  m_LocalPosition: {x: -0.17, y: -5.87, z: 0}
   m_LocalScale: {x: 3.4285717, y: 3.4285717, z: 2.4000003}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -100,10 +100,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.044768482, y: -0.13430518}
+  m_Offset: {x: 0.008096248, y: 1.352072}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -114,7 +114,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.701544, y: 1.2686102}
+  m_Size: {x: 0.78250617, y: 2.1915812}
   m_EdgeRadius: 0
 --- !u!1 &7738834407842744262
 GameObject:
@@ -146,7 +146,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7738834407842744262}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.181523, y: -1.7625656, z: 0}
+  m_LocalPosition: {x: -2.13, y: 0.18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -196,12 +196,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1347513877, guid: d8b49608b1c9f7d418f5814867cd064d, type: 3}
+  m_Sprite: {fileID: -220314060, guid: 9193d602f7e7a584ea437e846d260a50, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 8.15, y: 8.150872}
+  m_Size: {x: 7.83, y: 9.82}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -261,18 +261,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.14092016, y: -2.3278713}
+  m_Offset: {x: -0.02988553, y: 3.0295267}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.6, y: 0.76}
-    oldSize: {x: 8.15, y: 8.150872}
-    newSize: {x: 8.15, y: 8.150872}
+    pivot: {x: 0.6, y: 0.2}
+    oldSize: {x: 9.44, y: 9.63}
+    newSize: {x: 7.83, y: 9.82}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.517874, y: 7.7335835}
+  m_Size: {x: 7.960625, y: 9.343578}
   m_EdgeRadius: 0
 --- !u!114 &1778169974435840035
 MonoBehaviour:
@@ -300,11 +300,35 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents:
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6623789649002518471}
+        m_TargetAssemblyTypeName: NewMove, Assembly-CSharp
+        m_MethodName: SetMoviment
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 642f64d2-6238-4b73-b18c-872bbe5a5ba6
     m_ActionName: Player 1/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d,/XInputControllerWindows/dpad/up,/XInputControllerWindows/dpad/down,/XInputControllerWindows/dpad/left,/XInputControllerWindows/dpad/right]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6623789649002518471}
+        m_TargetAssemblyTypeName: NewMove, Assembly-CSharp
+        m_MethodName: SetJump
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 4091b2ba-55e7-415d-9ea0-f6a724c60de8
     m_ActionName: Player 1/Jump[/Keyboard/space,/XInputControllerWindows/buttonSouth]
   - m_PersistentCalls:
@@ -341,7 +365,7 @@ MonoBehaviour:
     m_ActionName: Player 2/Jump[/Keyboard/space,/XInputControllerWindows/buttonSouth]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: Player 2
+  m_DefaultActionMap: Player 1
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!114 &6623789649002518471

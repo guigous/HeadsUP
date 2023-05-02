@@ -43,12 +43,9 @@ public class NewMove : MonoBehaviour
         if (IsGrounded() == true)
         {
             rb.velocity = Vector2.up * jumpHeight;
-            anim.SetBool("taPulando", true); 
+            
         }
-       else
-        {
-            anim.SetBool("taPulando", false);
-        }
+       
     }
 
     private void FixedUpdate()
@@ -56,6 +53,7 @@ public class NewMove : MonoBehaviour
         
 
         Walking();
+        Jumping();
 
          
 
@@ -89,7 +87,17 @@ public class NewMove : MonoBehaviour
 
     }
 
-    
+    public void Jumping()
+    {
+        if (IsGrounded() == false)
+        {
+            anim.SetBool("taPulando", true);
+        }
+        if (IsGrounded() == true)
+        {
+            anim.SetBool("taPulando", false);
+        }
+    }
     
 
     private bool IsGrounded()
