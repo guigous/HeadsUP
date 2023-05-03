@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class SpawnPlayer : MonoBehaviour
 {
@@ -16,9 +18,16 @@ public class SpawnPlayer : MonoBehaviour
 
     private void Spawn()
     {
-        Instantiate(playerPrefabs[PlayerPrefs.GetInt("Personagem1")], spawnPoint[0].position, Quaternion.identity);
+        if (Instantiate(playerPrefabs[PlayerPrefs.GetInt("Personagem1")], spawnPoint[0].position, Quaternion.identity))
+        {
+            Instantiate(playerPrefabs[PlayerPrefs.GetInt("Personagem1")], spawnPoint[0].position, Quaternion.identity);
+            
+            
+        }
 
         Instantiate(playerPrefabs[PlayerPrefs.GetInt("Personagem2")], spawnPoint[1].position, Quaternion.identity);
+
+        
     }
 
 }

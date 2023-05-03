@@ -9,13 +9,13 @@ public class NewMove : MonoBehaviour
     private Vector2 movimento;
     public float moveSpeed;
     public float jumpHeight;
-    public int pulosExtras = 1;
     private float direction;
     
 
     public Animator anim;
     private SpriteRenderer spriteRenderer;
     private BoxCollider2D boxCollider2D;
+    private PlayerInput playerInput;
 
     public bool floor;
     public LayerMask floorMask;
@@ -30,7 +30,13 @@ public class NewMove : MonoBehaviour
         anim=GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         boxCollider2D = GetComponent<BoxCollider2D>();
-        
+        playerInput = GetComponent<PlayerInput>();
+
+
+
+
+
+
     }
 
     public void SetMoviment(InputAction.CallbackContext value)
@@ -118,4 +124,5 @@ public class NewMove : MonoBehaviour
          
         }
     }
+
 }

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1341371285}
   - component: {fileID: 1341371286}
   - component: {fileID: 761842507}
+  - component: {fileID: 1942589513}
   m_Layer: 0
   m_Name: Capivara
   m_TagString: Player
@@ -126,7 +127,7 @@ MonoBehaviour:
   moveSpeed: 14
   jumpHeight: 75
   pulosExtras: 1
-  anim: {fileID: 0}
+  anim: {fileID: 1942589513}
   floor: 0
   floorMask:
     serializedVersion: 2
@@ -189,16 +190,40 @@ MonoBehaviour:
     m_ActionId: 4091b2ba-55e7-415d-9ea0-f6a724c60de8
     m_ActionName: Player 1/Jump[/Keyboard/space,/XInputControllerWindows/buttonSouth]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1341371285}
+        m_TargetAssemblyTypeName: NewMove, Assembly-CSharp
+        m_MethodName: SetMoviment
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 5016c004-d6aa-4ba6-a850-6a9af207778d
     m_ActionName: Player 2/Movement[/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow,/XInputControllerWindows/dpad/up,/XInputControllerWindows/dpad/down,/XInputControllerWindows/dpad/left,/XInputControllerWindows/dpad/right]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1341371285}
+        m_TargetAssemblyTypeName: NewMove, Assembly-CSharp
+        m_MethodName: SetJump
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 235c424b-b74b-4980-8488-d1190f77cf5c
     m_ActionName: Player 2/Jump[/Keyboard/upArrow,/XInputControllerWindows/buttonSouth]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: Player 1
+  m_DefaultActionMap: Player 2
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!61 &761842507
@@ -227,6 +252,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.5350847, y: 9.787933}
   m_EdgeRadius: 0
+--- !u!95 &1942589513
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350413363137129786}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2efa6f9e617656e479daa283666a1aed, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &5228265201265702020
 GameObject:
   m_ObjectHideFlags: 0
@@ -253,7 +298,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5228265201265702020}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.02, y: -1.28, z: 0}
+  m_LocalPosition: {x: -0.02, y: 0.45, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
