@@ -288,7 +288,6 @@ RectTransform:
   - {fileID: 1447789412}
   - {fileID: 1160608542}
   - {fileID: 1805436469}
-  - {fileID: 1341428719}
   - {fileID: 1889935091}
   - {fileID: 1570195448}
   m_Father: {fileID: 0}
@@ -512,7 +511,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TUTORIAL
+  m_text: MULTIPLAYER
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b8b3775f2d2975a4bb810ed8eee0544a, type: 2}
   m_sharedMaterial: {fileID: -6080801064085797817, guid: b8b3775f2d2975a4bb810ed8eee0544a, type: 2}
@@ -761,8 +760,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -510, y: -186}
-  m_SizeDelta: {x: 1322.05, y: 1052.911}
+  m_AnchoredPosition: {x: -488, y: -297}
+  m_SizeDelta: {x: 722.5872, y: 786.41}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1154603267
 MonoBehaviour:
@@ -784,7 +783,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3758b7be067e3be4db5f029b1837776a, type: 3}
+  m_Sprite: {fileID: -1738852212, guid: 3758b7be067e3be4db5f029b1837776a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -964,18 +963,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1341428718}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3188721, y: 0.3188721, z: 0.3188721}
+  m_LocalScale: {x: 0.3188721, y: 0.31887203, z: 0.3188721}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1557930344}
-  m_Father: {fileID: 265809677}
-  m_RootOrder: 5
+  m_Father: {fileID: 1848812114}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 430.8241, y: -313.14594}
   m_SizeDelta: {x: 426.35156, y: 311.3103}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1341428720
@@ -1119,8 +1118,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 484, y: 147}
-  m_SizeDelta: {x: 1322.05, y: 1052.911}
+  m_AnchoredPosition: {x: 517, y: 215.62}
+  m_SizeDelta: {x: 936.45, y: 852.6239}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1447789413
 MonoBehaviour:
@@ -1142,7 +1141,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9193d602f7e7a584ea437e846d260a50, type: 3}
+  m_Sprite: {fileID: -1286362076, guid: c758a18bbf954e6409ff589762d3be59, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1327,7 +1326,7 @@ RectTransform:
   m_Children:
   - {fileID: 559589200}
   m_Father: {fileID: 265809677}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -1538,7 +1537,7 @@ GameObject:
   - component: {fileID: 1805436473}
   - component: {fileID: 1805436470}
   m_Layer: 5
-  m_Name: SINGLEPLAYER
+  m_Name: MODO HISTORIA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1562,7 +1561,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -4, y: 77}
+  m_AnchoredPosition: {x: -4, y: 65}
   m_SizeDelta: {x: 426.3516, y: -28}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1805436470
@@ -1616,7 +1615,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1700,7 +1699,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 5.373257, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1341428719}
   m_Father: {fileID: 1805436469}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1729,7 +1729,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: PLAY
+  m_text: STORY
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b8b3775f2d2975a4bb810ed8eee0544a, type: 2}
   m_sharedMaterial: {fileID: -6080801064085797817, guid: b8b3775f2d2975a4bb810ed8eee0544a, type: 2}
@@ -1840,7 +1840,7 @@ RectTransform:
   m_Children:
   - {fileID: 645052882}
   m_Father: {fileID: 265809677}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
