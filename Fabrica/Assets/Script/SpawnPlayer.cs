@@ -20,15 +20,12 @@ public class SpawnPlayer : MonoBehaviour
 
     private void Spawn()
     {
-        if (Instantiate(playerPrefabs[PlayerPrefs.GetInt("Personagem1")], spawnPoint[0].position, Quaternion.identity))
-        {
-            Instantiate(playerPrefabs[PlayerPrefs.GetInt("Personagem1")], spawnPoint[0].position, Quaternion.identity);
+       GameObject p1 =  Instantiate(playerPrefabs[PlayerPrefs.GetInt("Personagem2")], spawnPoint[0].position, Quaternion.identity);
+        //p1.GetComponent<PlayerInput>().actions.FindActionMap("Player1").Enable();
 
 
-        }
-
-        Instantiate(playerPrefabs[PlayerPrefs.GetInt("Personagem2")], spawnPoint[1].position, Quaternion.identity);
-
+        GameObject p2 = Instantiate(playerPrefabs[PlayerPrefs.GetInt("Personagem1")], spawnPoint[1].position, Quaternion.identity);
+        // p2.GetComponent<PlayerInput>().actions.FindActionMap("Player2").Enable();
 
     }
 

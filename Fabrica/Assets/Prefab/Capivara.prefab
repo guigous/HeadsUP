@@ -126,7 +126,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 14
   jumpHeight: 75
-  pulosExtras: 1
   anim: {fileID: 1942589513}
   floor: 0
   floorMask:
