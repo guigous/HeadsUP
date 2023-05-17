@@ -178,10 +178,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   avatares:
-  - {fileID: 105667626, guid: d8b49608b1c9f7d418f5814867cd064d, type: 3}
-  - {fileID: 595465373, guid: d8b49608b1c9f7d418f5814867cd064d, type: 3}
-  - {fileID: -96011667, guid: d8b49608b1c9f7d418f5814867cd064d, type: 3}
-  - {fileID: -1347513877, guid: d8b49608b1c9f7d418f5814867cd064d, type: 3}
+  - {fileID: 21300000, guid: c1a8f459afb80f14cbd2e65cae73a76e, type: 3}
+  - {fileID: 21300000, guid: 15def24cbd6041d488830fdfba1e50ff, type: 3}
+  - {fileID: 21300000, guid: 002b12765deb2a149a1626168e2bf39e, type: 3}
+  - {fileID: 21300000, guid: d362e304f089a374b8ec42fe496edd2b, type: 3}
   avatarImagem: {fileID: 1092569728}
   avatarIndice: -1
   indiceSlot: 1
@@ -1152,7 +1152,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -321, y: -34}
+  m_AnchoredPosition: {x: -321, y: -39.307983}
   m_SizeDelta: {x: 320, y: 320}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1092569728
@@ -1175,7 +1175,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 595465373, guid: d8b49608b1c9f7d418f5814867cd064d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 002b12765deb2a149a1626168e2bf39e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1500,7 +1500,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -320.02, y: -22.917}
+  m_AnchoredPosition: {x: -322, y: -50}
   m_SizeDelta: {x: 320, y: 320}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1347960197
@@ -1523,7 +1523,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 595465373, guid: d8b49608b1c9f7d418f5814867cd064d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 002b12765deb2a149a1626168e2bf39e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1805,10 +1805,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   avatares:
-  - {fileID: 105667626, guid: d8b49608b1c9f7d418f5814867cd064d, type: 3}
-  - {fileID: 595465373, guid: d8b49608b1c9f7d418f5814867cd064d, type: 3}
-  - {fileID: -96011667, guid: d8b49608b1c9f7d418f5814867cd064d, type: 3}
-  - {fileID: -1347513877, guid: d8b49608b1c9f7d418f5814867cd064d, type: 3}
+  - {fileID: 21300000, guid: c1a8f459afb80f14cbd2e65cae73a76e, type: 3}
+  - {fileID: 21300000, guid: 15def24cbd6041d488830fdfba1e50ff, type: 3}
+  - {fileID: 21300000, guid: 002b12765deb2a149a1626168e2bf39e, type: 3}
+  - {fileID: 21300000, guid: d362e304f089a374b8ec42fe496edd2b, type: 3}
   avatarImagem: {fileID: 1347960197}
   avatarIndice: 0
   indiceSlot: 2

@@ -10,11 +10,13 @@ public class SpawnPlayer : MonoBehaviour
 
     [SerializeField] private Transform[] spawnPoint;
 
-    [SerializeField] private PlayerInput inputActionsMap;
+    
 
     private void Start()
     {
         Spawn();
+
+
 
     }
 
