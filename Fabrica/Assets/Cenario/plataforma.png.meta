@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 82472914f0224ad4987e3e671334a620
+guid: 5e0ca04653ea8e94d9c104ab4ef1112b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -129,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: plantas_0
+      name: plataforma_0
       rect:
         serializedVersion: 2
-        x: 95
-        y: 1393
-        width: 460
-        height: 523
+        x: 91
+        y: 1851
+        width: 1881
+        height: 190
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f28632d94627e3747b0ce96dfd768842
-      internalID: 1075288867
+      spriteID: 79c01ea4015b9b64aa55f6e45bcaf7eb
+      internalID: 1361275364
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plantas_1
+      name: plataforma_1
       rect:
         serializedVersion: 2
-        x: 1335
-        y: 1427
-        width: 673
-        height: 343
+        x: 192
+        y: 1416
+        width: 1617
+        height: 253
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,20 +164,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c40026baf237dcc4eaed60f12dcd6556
-      internalID: 1300901751
+      spriteID: d6ad1908ea2a61e40aa1cddc50777e3a
+      internalID: 562049306
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plantas_2
+      name: plataforma_2
       rect:
         serializedVersion: 2
-        x: 158
-        y: 198
-        width: 285
-        height: 371
+        x: 134
+        y: 687
+        width: 1860
+        height: 587
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,20 +185,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b02505e562b7cce438b0489a09dfa253
-      internalID: -1140786290
+      spriteID: 1499a1f38ad606840a69762bb175938c
+      internalID: -878438250
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plantas_3
+      name: plataforma_3
       rect:
         serializedVersion: 2
-        x: 1540
-        y: 268
-        width: 345
-        height: 289
+        x: 278
+        y: 86
+        width: 337
+        height: 321
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,8 +206,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c2b914598807f24b82904729dc2c565
-      internalID: -546374270
+      spriteID: 15be29371549d594085ed9704f9b36c9
+      internalID: -904041512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plataforma_4
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 62
+        width: 544
+        height: 451
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b0b6caa7a6177b4ea115638d79235de
+      internalID: 87612557
       vertices: []
       indices: 
       edges: []
@@ -223,10 +244,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      plantas_0: 1075288867
-      plantas_1: 1300901751
-      plantas_2: -1140786290
-      plantas_3: -546374270
+      plataforma_0: 1361275364
+      plataforma_1: 562049306
+      plataforma_2: -878438250
+      plataforma_3: -904041512
+      plataforma_4: 87612557
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
