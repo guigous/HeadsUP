@@ -40,6 +40,7 @@ public class PersonagemSlot : MonoBehaviour
                 escolhido[avatarIndice] = true;
 
                 PlayerPrefs.SetInt (string.Format("Personagem{0}", indiceSlot), avatarIndice);
+                
             }
 
             if(primeiraEscolha)
