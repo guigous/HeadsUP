@@ -78,7 +78,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6344127169067064881
 Transform:
   m_ObjectHideFlags: 0
@@ -207,13 +207,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60b558d5684cc644a86929cc97e334a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
-  jumpHeight: 0
+  moveSpeed: 12
+  jumpHeight: 15
   anim: {fileID: -1291936770946707730}
   floor: 0
   floorMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
 --- !u!95 &-1291936770946707730
 Animator:
   serializedVersion: 5

@@ -7,8 +7,8 @@ public class PersonagemSlot : MonoBehaviour
 {
     [SerializeField] private Sprite[] avatares;
     [SerializeField] private Image avatarImagem;
-    [SerializeField] private int avatarIndice;
-    [SerializeField] private int indiceSlot;
+    [SerializeField] public int avatarIndice;
+    [SerializeField] public int indiceSlot;
 
 
 
@@ -40,6 +40,7 @@ public class PersonagemSlot : MonoBehaviour
                 escolhido[avatarIndice] = true;
 
                 PlayerPrefs.SetInt (string.Format("Personagem{0}", indiceSlot), avatarIndice);
+                
                 
             }
 

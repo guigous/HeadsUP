@@ -206,7 +206,7 @@ public partial class @Movement: IInputActionCollection2, IDisposable
             ],
             ""bindings"": [
                 {
-                    ""name"": ""Keyboard WASD"",
+                    ""name"": ""Keyboard Arrows"",
                     ""id"": ""fb861a0e-0cdb-496a-913f-5a733ce52e0b"",
                     ""path"": ""2DVector"",
                     ""interactions"": """",

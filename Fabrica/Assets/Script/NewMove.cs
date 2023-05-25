@@ -10,6 +10,8 @@ public class NewMove : MonoBehaviour
     public float moveSpeed;
     public float jumpHeight;
     private float direction;
+    public InputActionReference referenceJump, referenceMove;
+    
     
 
     public Animator anim;
@@ -20,21 +22,25 @@ public class NewMove : MonoBehaviour
     public bool floor;
     public LayerMask floorMask;
 
-    
 
+
+
+    private void OnEnable()
+    {
+        playerInput.actions["Jump"].performed += SetJump;
+        
+    }
+
+   
 
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        anim=GetComponent<Animator>();
+        anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         boxCollider2D = GetComponent<BoxCollider2D>();
-        playerInput = GetComponent<PlayerInput>();
-
-
-
-
+        playerInput = GetComponentInParent<PlayerInput>();
 
 
     }
@@ -51,7 +57,7 @@ public class NewMove : MonoBehaviour
             rb.velocity = Vector2.up * jumpHeight;
             
         }
-       
+        
     }
 
     private void FixedUpdate()
@@ -109,7 +115,7 @@ public class NewMove : MonoBehaviour
     private bool IsGrounded()
     {
         RaycastHit2D hit = Physics2D.Raycast(boxCollider2D.bounds.center, Vector2.down, boxCollider2D.bounds.extents.y + 0.5f, floorMask);
-        Debug.Log(hit.collider);
+        
 
         if (hit.collider != null)
             return true;
@@ -117,12 +123,8 @@ public class NewMove : MonoBehaviour
             return false;
         
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnDisable()
     {
-         if (collision.collider != null && CompareTag("floor"))
-        {
-         
-        }
+        playerInput.actions["Jump"].performed -= SetJump;
     }
-
 }
