@@ -1,3 +1,4 @@
+using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,18 +7,26 @@ public class Avatar : MonoBehaviour
 {
     [SerializeField] GameObject[] avatar;
     public int playerId;
+    public PhotonView photonview;
 
 
     private void Awake()
     {
         int personagemSelecionado = PlayerPrefs.GetInt(string.Format("Personagem{0}", playerId));
 
-        avatar[personagemSelecionado].SetActive(true);
+        if (photonview.IsMine)
+        {
+            avatar[personagemSelecionado].SetActive(true);
+        }
     }
+           
 
     // Start is called before the first frame update
     void Start()
     {
+
+        photonview = GetComponent<PhotonView>();
+        Debug.LogWarning("Name: " + PhotonNetwork.NickName + " PhotonView: " + photonview.IsMine);
         
     }
 
