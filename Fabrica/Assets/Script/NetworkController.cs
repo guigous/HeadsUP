@@ -8,28 +8,25 @@ using UnityEngine.SceneManagement;
 
 public class NetworkController : MonoBehaviourPunCallbacks
 {
-    [Header("LOGIN")]
-    public GameObject loginPn;
-    public InputField playerNameInput;
-    string tempPlayerName;
-
     [Header("LOBBY")]
-    public GameObject lobbyPn;
     public InputField roomNameInput;
     string tempRoomName;
 
     [Header("PLAYER")]
     public GameObject playerPUN;
-    public GameObject mainCamera;
+    
 
+    public GameObject spawnPlayer;
+
+    private void Awake()
+    {
+        //player1PUN = spawnPlayer.GetComponent
+    }
 
     void Start()
     {
-        //loginPn.gameObject.SetActive(true);
-        //lobbyPn.gameObject.SetActive(false);
 
-        tempPlayerName = "Neiva" + Random.Range(8, 99);
-        //playerNameInput.text = tempPlayerName;
+        
 
         tempRoomName = "Pato" + Random.Range(8, 99);
         PhotonNetwork.ConnectUsingSettings();
@@ -104,9 +101,9 @@ public class NetworkController : MonoBehaviourPunCallbacks
         lobbyPn.gameObject.SetActive(false);
         mainCamera.gameObject.SetActive(false);*/
 
-        Vector3 pos = new Vector3(Random.Range(-15, 15), playerPUN.transform.position.y, Random.Range(-15, 15));
+        //Vector3 pos = new Vector3(Random.Range(-15, 15), playerPUN.transform.position.y, Random.Range(-15, 15));
 
-        PhotonNetwork.Instantiate(playerPUN.name, pos, playerPUN.transform.rotation, 0);
+       PhotonNetwork.Instantiate(playerPUN.name, spawnPlayer.transform.position, playerPUN.transform.rotation, 0);
 
         
 

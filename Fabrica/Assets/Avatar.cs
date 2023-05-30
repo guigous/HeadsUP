@@ -14,10 +14,11 @@ public class Avatar : MonoBehaviour
     {
         int personagemSelecionado = PlayerPrefs.GetInt(string.Format("Personagem{0}", playerId));
 
-        if (photonview.IsMine)
+        if (!photonview.IsMine && playerId == 1)
         {
             avatar[personagemSelecionado].SetActive(true);
         }
+        
     }
            
 
@@ -25,7 +26,7 @@ public class Avatar : MonoBehaviour
     void Start()
     {
 
-        photonview = GetComponent<PhotonView>();
+        photonview = this.GetComponent<PhotonView>();
         Debug.LogWarning("Name: " + PhotonNetwork.NickName + " PhotonView: " + photonview.IsMine);
         
     }
