@@ -10,6 +10,8 @@ public class NetworkController : MonoBehaviourPunCallbacks
 {
     [Header("LOBBY")]
     public InputField roomNameInput;
+
+    [SerializeField]
     string tempRoomName;
 
     [Header("PLAYER")]
@@ -88,6 +90,7 @@ public class NetworkController : MonoBehaviourPunCallbacks
     public override void OnJoinRandomFailed(short returnCode, string message)
     {
         PhotonNetwork.CreateRoom(tempRoomName);
+        Debug.Log("Failed to enter Room... Creating Room Now...");
     }
 
     public override void OnJoinedRoom()
@@ -103,7 +106,7 @@ public class NetworkController : MonoBehaviourPunCallbacks
 
         //Vector3 pos = new Vector3(Random.Range(-15, 15), playerPUN.transform.position.y, Random.Range(-15, 15));
 
-       PhotonNetwork.Instantiate(playerPUN.name, spawnPlayer.transform.position, playerPUN.transform.rotation, 0);
+       //PhotonNetwork.Instantiate(playerPUN.name, spawnPlayer.transform.position, playerPUN.transform.rotation, 0);
 
         
 
