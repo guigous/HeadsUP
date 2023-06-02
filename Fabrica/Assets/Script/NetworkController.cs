@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 public class NetworkController : MonoBehaviourPunCallbacks
 {
     [Header("LOBBY")]
-    public InputField roomNameInput;
+    InputField roomNameInput;
 
     [SerializeField]
     string tempRoomName;
