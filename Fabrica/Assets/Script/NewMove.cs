@@ -10,8 +10,10 @@ public class NewMove : MonoBehaviour
     public float moveSpeed;
     public float jumpHeight;
     public InputActionReference referenceJump, referenceMove;
-    
-    
+
+
+    public AudioClip somPulo;
+
 
     public Animator anim;
     private BoxCollider2D boxCollider2D;
@@ -21,6 +23,12 @@ public class NewMove : MonoBehaviour
     public LayerMask floorMask;
 
 
+    AudioSource audioSource;
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
 
     private void OnEnable()
@@ -53,7 +61,7 @@ public class NewMove : MonoBehaviour
         if (IsGrounded() == true)
         {
             rb.velocity = Vector2.up * jumpHeight;
-            
+            audioSource.PlayOneShot(somPulo);
         }
         
     }

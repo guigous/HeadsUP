@@ -3,7 +3,12 @@ guid: 60b558d5684cc644a86929cc97e334a2
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - referenceJump: {instanceID: 0}
+  - referenceMove: {instanceID: 0}
+  - somPassos: {instanceID: 0}
+  - somPulo: {fileID: 8300000, guid: 144dd49299403974e86a7a6129bd7fbf, type: 3}
+  - anim: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
