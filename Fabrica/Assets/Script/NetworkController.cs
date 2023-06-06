@@ -15,14 +15,15 @@ public class NetworkController : MonoBehaviourPunCallbacks
     string tempRoomName;
 
     [Header("PLAYER")]
-    public GameObject playerPUN;
+    public PhotonView playerPUN;
+    
     
 
     public GameObject spawnPlayer;
 
     private void Awake()
     {
-        //player1PUN = spawnPlayer.GetComponent
+        //playerPUN = spawnPlayer.GetComponent<PhotonView>();
     }
 
     void Start()
@@ -98,7 +99,7 @@ public class NetworkController : MonoBehaviourPunCallbacks
         Debug.LogWarning("OnJoinedRoom");
         Debug.LogWarning("Nome da Sala: " + PhotonNetwork.CurrentRoom.Name);
         Debug.LogWarning("Nome da Player: " + PhotonNetwork.NickName);
-        Debug.LogWarning("Players Conectados: " + PhotonNetwork.CurrentRoom.PlayerCount);
+        Debug.Log("Players Conectados: " + PhotonNetwork.CurrentRoom.PlayerCount);
 
         /*loginPn.gameObject.SetActive(false);
         lobbyPn.gameObject.SetActive(false);
@@ -106,7 +107,7 @@ public class NetworkController : MonoBehaviourPunCallbacks
 
         //Vector3 pos = new Vector3(Random.Range(-15, 15), playerPUN.transform.position.y, Random.Range(-15, 15));
 
-       //PhotonNetwork.Instantiate(playerPUN.name, spawnPlayer.transform.position, playerPUN.transform.rotation, 0);
+       PhotonNetwork.Instantiate(playerPUN.name, spawnPlayer.transform.position, playerPUN.transform.rotation, 0);
 
         
 

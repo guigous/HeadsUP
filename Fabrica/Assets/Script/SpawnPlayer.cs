@@ -15,7 +15,7 @@ public class SpawnPlayer : MonoBehaviour
     private void Start()
     {
         SpawnPlayer1();
-        SpawnPlayer2();
+        //SpawnPlayer2();
 
         
 
