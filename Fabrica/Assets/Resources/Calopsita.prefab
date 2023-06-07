@@ -130,13 +130,15 @@ GameObject:
   - component: {fileID: 6761411921928216032}
   - component: {fileID: 992895412047292852}
   - component: {fileID: 6623789649002518471}
+  - component: {fileID: 2821905206973561045}
+  - component: {fileID: 3818478895138559423}
   m_Layer: 0
   m_Name: Calopsita
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7738834407842744251
 Transform:
   m_ObjectHideFlags: 0
@@ -285,13 +287,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60b558d5684cc644a86929cc97e334a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 14
+  moveSpeed: 30
   jumpHeight: 50
-  referenceJump: {fileID: 0}
-  referenceMove: {fileID: 0}
+  photonView: {fileID: 0}
   somPulo: {fileID: 8300000, guid: 144dd49299403974e86a7a6129bd7fbf, type: 3}
   anim: {fileID: 6761411921928216032}
   floor: 0
   floorMask:
     serializedVersion: 2
     m_Bits: 256
+--- !u!114 &2821905206973561045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7738834407842744262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e7cb724808c322458aa4d15f5035fa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizeVelocity: 1
+  m_SynchronizeAngularVelocity: 0
+  m_TeleportEnabled: 0
+  m_TeleportIfDistanceGreaterThan: 3
+--- !u!114 &3818478895138559423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7738834407842744262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 2821905206973561045}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0

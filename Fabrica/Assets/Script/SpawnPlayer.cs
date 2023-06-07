@@ -14,14 +14,14 @@ public class SpawnPlayer : MonoBehaviour
 
     private void Start()
     {
-        SpawnPlayer1();
+        //SpawnPlayer1();
         //SpawnPlayer2();
 
         
 
     }
 
-    private void SpawnPlayer1()
+    /*private void SpawnPlayer1()
     {
 
         int personagemSelecionado = PlayerPrefs.GetInt("Personagem1");
@@ -38,7 +38,7 @@ public class SpawnPlayer : MonoBehaviour
         int personagemSelecionado = PlayerPrefs.GetInt("Personagem2");
         GameObject prefab = playerPrefabs[1];
         GameObject clone = Instantiate(prefab, spawnPoint[1].transform.position, Quaternion.identity);
-    }
+    }*/
 
 
 

@@ -1,16 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
+using Photon.Pun.UtilityScripts;
+using Photon.Realtime;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
+using Unity.VisualScripting;
 
-public class NewMove : MonoBehaviour
+public class NewMove : MonoBehaviourPunCallbacks
 {
     private Rigidbody2D rb;
     private Vector2 movimento;
     public float moveSpeed;
     public float jumpHeight;
-    public InputActionReference referenceJump, referenceMove;
+    public PhotonView photonView;
 
+   
 
     public AudioClip somPulo;
 
@@ -31,81 +38,125 @@ public class NewMove : MonoBehaviour
     }
 
 
-    private void OnEnable()
+    /*private void OnEnable()
     {
         playerInput.actions["Jump"].performed += SetJump;
-        
-    }
 
-   
+    }*/
 
 
-    // Start is called before the first frame update
+
+
+    
     void Awake()
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         boxCollider2D = GetComponent<BoxCollider2D>();
         playerInput = GetComponentInParent<PlayerInput>();
-
+        photonView = GetComponentInParent<PhotonView>();
 
     }
+    
 
-    public void SetMoviment(InputAction.CallbackContext value)
+    
+
+    /*public void SetMoviment(InputAction.CallbackContext value)
     {
-        movimento = value.ReadValue<Vector2>();
         
+        
+            movimento = value.ReadValue<Vector2>();
+        
+        
+
     }
     public void SetJump(InputAction.CallbackContext value)
     {
+        
         if (IsGrounded() == true)
         {
             rb.velocity = Vector2.up * jumpHeight;
             audioSource.PlayOneShot(somPulo);
         }
-        
-    }
+
+    }*/
 
     private void FixedUpdate()
     {
-        
-
         Walking();
-        Jumping();
-
-         
-
-
-
-
 
     }
-    private void Walking()
+    public void Walking()
+
     {
-        transform.Translate(movimento.x, 0f, 0f);
-        
-        if (rb.angularVelocity != 0)
+        if (photonView.IsMine)
         {
-            anim.SetBool("taCorrendo", true);
-        }
-        else
-        {
-            anim.SetBool("taCorrendo", false);
-        }
-        if(movimento.x < 0f)
-        {
-            transform.localScale = new Vector3(-1,1,1);
-        }
-        if (movimento.x > 0f)
-        {
-            transform.localScale = new Vector3(1, 1, 1);
+            float movimentoHorizontal = Input.GetAxis("Horizontal");
+            Vector3 movimento = new Vector3(movimentoHorizontal, 0f, 0f) * moveSpeed * Time.deltaTime;
+            transform.Translate(movimento);
+            WalkingAnim();
+
+            if (Input.GetButtonDown("Jump")&& IsGrounded() == true)
+            {
+                rb.velocity = Vector2.up * jumpHeight;
+                JumpingAnim();
+            }
+
+            bool IsGrounded()
+            {
+                RaycastHit2D hit = Physics2D.Raycast(boxCollider2D.bounds.center, Vector2.down, boxCollider2D.bounds.extents.y + 0.5f, floorMask);
+
+
+                if (hit.collider != null)
+                    return true;
+                else
+                    return false;
+
+            }
+
+            void JumpingAnim()
+            {
+                if (IsGrounded() == false)
+                {
+                    anim.SetBool("taPulando", true);
+                }
+                if (IsGrounded() == true)
+                {
+                    anim.SetBool("taPulando", false);
+                }
+            }
+            void WalkingAnim()
+            {
+                transform.Translate(movimento.x, 0f, 0f);
+
+                if (rb.angularVelocity != 0)
+                {
+                    anim.SetBool("taCorrendo", true);
+                }
+                else
+                {
+                    anim.SetBool("taCorrendo", false);
+                }
+                if (movimento.x < 0f)
+                {
+                    transform.localScale = new Vector3(-1, 1, 1);
+                }
+                if (movimento.x > 0f)
+                {
+                    transform.localScale = new Vector3(1, 1, 1);
+                }
+
+
+
+            }
         }
 
-        
 
     }
 
-    public void Jumping()
+    
+
+    /*public void JumpingAnim()
     {
         if (IsGrounded() == false)
         {
@@ -115,22 +166,12 @@ public class NewMove : MonoBehaviour
         {
             anim.SetBool("taPulando", false);
         }
-    }
+    }*/
     
 
-    private bool IsGrounded()
-    {
-        RaycastHit2D hit = Physics2D.Raycast(boxCollider2D.bounds.center, Vector2.down, boxCollider2D.bounds.extents.y + 0.5f, floorMask);
-        
-
-        if (hit.collider != null)
-            return true;
-        else
-            return false;
-        
-    }
-    private void OnDisable()
+    
+    /*private void OnDisable()
     {
         playerInput.actions["Jump"].performed -= SetJump;
-    }
+    }*/
 }

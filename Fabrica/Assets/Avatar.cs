@@ -14,7 +14,7 @@ public class Avatar : MonoBehaviour
     {
         int personagemSelecionado = PlayerPrefs.GetInt(string.Format("Personagem{0}", playerId));
 
-        if (!photonview.IsMine && playerId == 1)
+        if (photonview.IsMine && playerId == 1)
         {
             avatar[personagemSelecionado].SetActive(true);
         }
