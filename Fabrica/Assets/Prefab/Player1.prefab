@@ -357,12 +357,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 601613231306299291, guid: b5f9b0bd10c8e5849805246bd6821100, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 601613231306299291, guid: b5f9b0bd10c8e5849805246bd6821100, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 601613231306299291, guid: b5f9b0bd10c8e5849805246bd6821100, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.46
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 601613231306299291, guid: b5f9b0bd10c8e5849805246bd6821100, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.6500006
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 601613231306299291, guid: b5f9b0bd10c8e5849805246bd6821100, type: 3}
       propertyPath: m_LocalPosition.z
@@ -470,6 +478,10 @@ PrefabInstance:
     - target: {fileID: 6344127169067065038, guid: 3e3fc859cba9185468808a6fe84b04cb, type: 3}
       propertyPath: m_Name
       value: jacare
+      objectReference: {fileID: 0}
+    - target: {fileID: 6344127169067065038, guid: 3e3fc859cba9185468808a6fe84b04cb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e3fc859cba9185468808a6fe84b04cb, type: 3}
