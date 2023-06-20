@@ -20,7 +20,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1350413363137129788
 Transform:
   m_ObjectHideFlags: 0
@@ -223,6 +223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roundManager: {fileID: 0}
   respawnPoint: {fileID: 0}
+  avatar: {fileID: 0}
 --- !u!61 &1052604361870294951
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -322,3 +323,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roundManager: {fileID: 0}
   respawnPoint: {fileID: 0}
+  avatar: {fileID: 0}

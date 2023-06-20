@@ -6,11 +6,15 @@ public class Dano : MonoBehaviour
 {
     public Rounds roundManager;
     public Transform respawnPoint;
+    public Avatar avatar;
+    
 
 
     private void Start()
     {
         roundManager = FindAnyObjectByType<Rounds>();
+        //avatar = FindAnyObjectByType<Avatar>();
+        avatar = GetComponentInParent<Avatar>();
 
     }
 
@@ -18,10 +22,18 @@ public class Dano : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
 
-        if (other.CompareTag("head"))
+        if (other.CompareTag("head") && avatar.playerId == 1)
         {
 
             roundManager.Player1GanhouRound();
+
+
+        }
+        
+        if (other.CompareTag("head") && avatar.playerId == 2)
+        {
+
+            roundManager.Player2GanhouRound();
 
 
         }

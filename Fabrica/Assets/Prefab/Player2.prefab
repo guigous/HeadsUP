@@ -192,10 +192,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Capivara
       objectReference: {fileID: 0}
-    - target: {fileID: 1350413363137129786, guid: 2f3b0a95b2e10d34298457da38c02c6f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1350413363137129788, guid: 2f3b0a95b2e10d34298457da38c02c6f, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -276,11 +272,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 601613231306299291, guid: b5f9b0bd10c8e5849805246bd6821100, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.46
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 601613231306299291, guid: b5f9b0bd10c8e5849805246bd6821100, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.6500006
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 601613231306299291, guid: b5f9b0bd10c8e5849805246bd6821100, type: 3}
       propertyPath: m_LocalPosition.z
@@ -317,10 +313,6 @@ PrefabInstance:
     - target: {fileID: 1740282046445969561, guid: b5f9b0bd10c8e5849805246bd6821100, type: 3}
       propertyPath: m_Name
       value: Cachorro
-      objectReference: {fileID: 0}
-    - target: {fileID: 1740282046445969561, guid: b5f9b0bd10c8e5849805246bd6821100, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5f9b0bd10c8e5849805246bd6821100, type: 3}
@@ -399,10 +391,6 @@ PrefabInstance:
     - target: {fileID: 7738834407842744262, guid: 8ebcfe6e1ec123042bf2525eb48dc216, type: 3}
       propertyPath: m_Name
       value: Calopsita
-      objectReference: {fileID: 0}
-    - target: {fileID: 7738834407842744262, guid: 8ebcfe6e1ec123042bf2525eb48dc216, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ebcfe6e1ec123042bf2525eb48dc216, type: 3}

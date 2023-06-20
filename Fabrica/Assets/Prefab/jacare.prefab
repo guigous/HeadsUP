@@ -168,7 +168,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &5283801803869755902
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -208,7 +208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 12
-  jumpHeight: 15
+  jumpHeight: 30
   anim: {fileID: -1291936770946707730}
   floor: 0
   floorMask:
@@ -244,6 +244,7 @@ GameObject:
   m_Component:
   - component: {fileID: 102906598872972312}
   - component: {fileID: 9062740257958895651}
+  - component: {fileID: 6056270409383828935}
   m_Layer: 0
   m_Name: Damage
   m_TagString: Untagged
@@ -292,3 +293,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7892896, y: 1.1053549}
   m_EdgeRadius: 0
+--- !u!114 &6056270409383828935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7400491873424444327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c34313358a2045488b846ab354d1377, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roundManager: {fileID: 0}
+  respawnPoint: {fileID: 0}
+  avatar: {fileID: 0}
