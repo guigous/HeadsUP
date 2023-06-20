@@ -14,6 +14,12 @@ public class Rounds : MonoBehaviour
     public Image ponto1Player2;
     public Image ponto2Player2;
 
+    public GameObject player1Wins;
+    public GameObject player2Wins;
+
+    public GameObject blackPanel;
+
+
     private int pontosPlayer1 = 0; //deve aumentar quando player 1 pisar no player 2
     private int pontosPlayer2 = 0;
 
@@ -45,6 +51,9 @@ public class Rounds : MonoBehaviour
         if (pontosPlayer1 == 2)
         {
             // Player 1 ganhou o jogo!
+            player1Wins.SetActive(true);
+            blackPanel.SetActive(true);
+            
         }
     }
 
@@ -55,6 +64,9 @@ public class Rounds : MonoBehaviour
         if (pontosPlayer2 == 2)
         {
             // Player 2 ganhou o jogo!
+            player2Wins.SetActive(true);
+            blackPanel.SetActive(true);
+            
         }
     }
 }
